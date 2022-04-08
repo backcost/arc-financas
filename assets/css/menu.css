@@ -1,0 +1,9 @@
+.menu__list {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.menu__item {
+    margin: 0 15px;
+}
