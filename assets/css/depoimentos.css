@@ -1,0 +1,19 @@
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.depoimentos__slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__item {
+    align-self: center;
+    text-align: justify;
+    width: 50%;
+}

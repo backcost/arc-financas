@@ -4,5 +4,5 @@
     align-items: center;
     justify-content: space-between;
     background-color: #51648c;
-    height: 15vh;
+    height: fit-content;
 }
