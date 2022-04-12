@@ -2,4 +2,18 @@
     color: var(--white);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media a {
+    font-size: 17px;
+    margin: 4px 0;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.social-media p {
+    font-size: 15px;
+    margin-top: 5px;
 }

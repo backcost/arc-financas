@@ -1,8 +1,8 @@
 .footer {
-    padding: 3px 40px;
+    padding: 30px 150px 30px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: space-around;
     background-color: #51648c;
     height: fit-content;
 }
