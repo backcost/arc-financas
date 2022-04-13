@@ -1,5 +1,4 @@
 .menu__list {
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,4 +7,9 @@
 .menu__item {
     margin: 0 11px;
     list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
 }
