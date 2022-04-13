@@ -1,9 +1,4 @@
 .logo {
-    height: 90%;
-    margin-left: 10vw;
+    height: 60px;
+    margin: 20px 0 0;
 }
-
-.logo__img {
-    height: 90%;
-}
-

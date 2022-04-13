@@ -2,10 +2,10 @@
     color: white;
     display: flex;
     align-items: center;
-    margin-right: 10vw;
+    justify-content: center;
 }
 
 .menu__item {
-    margin: 0 15px;
+    margin: 0 11px;
     list-style: none;
 }
