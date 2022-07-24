@@ -1,8 +1,33 @@
 .footer {
-    padding: 20px 0;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: #51648c;
-    height: fit-content;
+    background-color: var(--crayola);
+    width: 100vw;
+    max-width: 1600px;
+    justify-content: space-between;
+}
+
+.social-media {
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-media__item {
+    font-size: 40px;
+    margin-right: 22px;
+    color: var(--superdarkjunglegreen);
+    text-decoration: none;
+    border: 6px solid var(--policeblue);
+    border-radius: 20px;
+    padding: 5px 11px;
+}
+
+.email {
+    margin-left: 25px;
+    font-size: 23px;
+    text-decoration: none;
+    color: var(--superdarkjunglegreen);
 }
