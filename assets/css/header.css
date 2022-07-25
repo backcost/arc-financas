@@ -1,8 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 .header {
+    font-family: 'Ca';
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--darkjunglegreen);
-    width: 100vw;
-    max-width: 1600px;
+    padding: 0px 5vw;
+}
+
+.logo {
+    height: 120px;
+    cursor: pointer;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item {
+    margin-left: 40px;
+    list-style: none;
+}
+
+.menu a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
 }
