@@ -1,4 +1,57 @@
+@font-face { font-family: Kenyan; src: url('/assets/fonts/kenyancoffeerg.ttf'); } 
+
 .main {
-    height: 90vh;
-    background-color: grad ;
+    display: flex;
+    flex-direction: column;
+    height: 82vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, var(--oxfordblue) 30%, var(--superdarkjunglegreen) 100%);
+}
+
+.reuniao__foto {
+    height: 72vw;
+    max-height: 72vh;
+    margin: 0 -17vw -70px 0;
+
+    background-image: url(/assets/img/estrela2.png);
+    background-size: 15vw;
+    background-repeat: no-repeat;
+    background-position: 480px 220px;
+}
+
+.reuniao__butao {
+    font-family: 'Kenyan';
+    font-size: 40px;
+    font-weight: 300;
+    width: 55vw;
+    max-width: 900px;
+    height: 70px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: var(--mustardyellow);
+    border-radius: 23px;
+}
+
+.reuniao__whats {
+    position: fixed;
+    right: 55px;
+    bottom: 90px;
+    font-family: 'Kenyan';
+    font-size: 20px;
+    font-weight: 300;
+    width: 200px;
+    height: 70px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: var(--crayola);
+    border-radius: 40px;
+    box-shadow: 1px 1px 2px var(--mustardyellow);
+}
+
+.reuniao__whats::before {
+    content: url(/assets/img/AlexBotao.png);
+    position: fixed;
+    right: 60px;
+    bottom: 155px;    
 }

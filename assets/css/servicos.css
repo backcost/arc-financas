@@ -1,0 +1,26 @@
+.servicos {
+    background-color: var(--superdarkjunglegreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.servicos__caixa {
+    font-family: 'Kenyan';
+    background-image: url(/assets/img/caixa-organiz.svg);
+    background-size: 500px;
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    padding: 25px;
+    background-color: var(--charcoal);
+    color: var(--white);
+    border-radius: 22px;
+    margin: 19px;
+    background-position-y: 1px;
+}
