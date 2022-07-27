@@ -15,23 +15,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(/assets/img/predioarc.png), url(/assets/img/estrela1.png), url(/assets/img/estrela2.png);
-    background-size: 740px, 260px, 200px;
-    background-position: 160px 170px, 80px 50px, 1025px 202px;
+    background-image: url(/assets/img/predioarc.png), url(/assets/img/estrela1.png);
+    background-size: 740px, 260px;
+    background-position: 160px 170px, 80px 50px;
     background-repeat: no-repeat;
 }
 
 .reuniao__foto {
     height: 590px;
     margin: 0 -430px -100px 0;
+    background-image: url(/assets/img/estrela2.png);
+    background-size: 200px;
+    background-position: 410px 200px;
+    background-repeat: no-repeat;
 }
 
 .reuniao__butao {
     font-family: 'Kenyan';
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 300;
-    width: 50vw;
-    max-width: 900px;
+    width: 780px;
     height: 100px;
     cursor: pointer;
     text-transform: uppercase;
@@ -39,8 +42,8 @@
     border-radius: 23px;
     background-image: url(/assets/img/calendar-regular.svg);
     background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: 90% 50%;
+    background-size: 40px;
+    background-position: 93% 45%;
 }
 
 .reuniao__whats {
@@ -56,7 +59,7 @@
     text-transform: uppercase;
     background-color: var(--crayola);
     border-radius: 40px;
-    box-shadow: 1px 1px 2px var(--mustardyellow);
+    box-shadow: 1px 1px 2px var(--white);
 }
 
 .reuniao__whats::before {
