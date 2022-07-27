@@ -3,24 +3,70 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.servicos_limite {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .servicos__caixa {
-    font-family: 'Kenyan';
     background-image: url(/assets/img/caixa-organiz.svg);
-    background-size: 500px;
-    font-size: 27px;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position: center 24px;
+    
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    align-content: center;
+    
     height: 200px;
     width: 200px;
     padding: 25px;
     background-color: var(--charcoal);
-    color: var(--white);
+  
     border-radius: 22px;
     margin: 19px;
-    background-position-y: 1px;
+}
+
+.servicos__caixa:nth-child(1) {
+    background-image: url('/assets/img/servicos1.png');
+}
+
+.servicos__caixa:nth-child(2) {
+    background-image: url('/assets/img/servicos2.png');
+}
+
+.servicos__caixa:nth-child(3) {
+    background-image: url('/assets/img/servicos3.png');
+}
+
+.servicos__caixa:nth-child(4) {
+    background-image: url('/assets/img/servicos4.png');
+}
+
+.servicos__caixa:nth-child(5) {
+    background-image: url('/assets/img/servicos5.png');
+}
+
+.servicos__texto {
+    font-family: 'Kenyan';
+    color: var(--white);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: normal;
+    position: relative;
+    top: 30px;
+    width: 180px;
+}
+
+.servicos__texto:nth-child(4) {
+    font-size: 2px;
 }
