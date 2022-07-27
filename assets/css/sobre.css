@@ -1,0 +1,29 @@
+.sobre {
+    background-image: url(/assets/img/arc_neon.png), url(/assets/img/estrela3.png), url(/assets/img/estrela3.png);
+    background-size: 250px, 150px, 250px;
+    background-position: 270px 50px, 450px 570px, 1000px -10px;
+    background-repeat: no-repeat;
+}
+
+.sobre__texto {
+    width: 600px;
+    text-align: left;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 100px;
+}
+
+.sobre__texto h2 {
+    padding-top: 40px;
+    font-family: 'Kenyan';
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.sobre__texto p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}

@@ -59,11 +59,10 @@
     text-transform: uppercase;
     background-color: var(--crayola);
     border-radius: 40px;
-    box-shadow: 1px 1px 2px var(--white);
 }
 
 .reuniao__whats::before {
-    content: url('../img/AlexBotao.png');
+    content: url(/assets/img/AlexBotao.png);
     position: fixed;
     right: 60px;
     bottom: 155px;    
