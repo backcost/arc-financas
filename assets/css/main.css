@@ -63,7 +63,7 @@
 }
 
 .reuniao__whats::before {
-    content: url('/assets/img/AlexBotao.png');
+    content: url('../assets/img/AlexBotao.png');
     position: fixed;
     right: 60px;
     bottom: 155px;    
