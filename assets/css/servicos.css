@@ -17,21 +17,18 @@
     background-image: url(/assets/img/caixa-organiz.svg);
     background-size: 170px;
     background-repeat: no-repeat;
-    background-position: center 24px;
-    
+    background-position: center 50px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-    
-    height: 200px;
-    width: 200px;
-    padding: 25px;
+    height: 220px;
+    width: 220px;
     background-color: var(--charcoal);
-  
-    border-radius: 22px;
-    margin: 19px;
+    border-radius: 25px;
+    margin: 0 0 18px 18px;
 }
 
 .servicos__caixa:nth-child(1) {
@@ -48,10 +45,18 @@
 
 .servicos__caixa:nth-child(4) {
     background-image: url('/assets/img/servicos4.png');
+    background-position: center 30px;
 }
 
 .servicos__caixa:nth-child(5) {
     background-image: url('/assets/img/servicos5.png');
+}
+
+.servicos__caixa:hover {
+    background-color: var(--crayola);
+    cursor: default;
+    transition-duration: 2s;
+    background-image: none;
 }
 
 .servicos__texto {
@@ -60,13 +65,29 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 27px;
+    font-size: 30px;
     font-weight: normal;
-    position: relative;
-    top: 30px;
-    width: 180px;
 }
 
-.servicos__texto:nth-child(4) {
-    font-size: 2px;
+.texto__1 {
+    position: relative;
+    top: 60px;
+    width: 120px;
+}
+
+.texto__3 {
+    position: relative;
+    top: 55px;
+}
+
+.texto__4 {
+    position: relative;
+    top: 60px;
+    font-size: 27.3px;
+}
+
+.texto__5 {
+    position: relative;
+    top: 60px;
+    width: 140px;
 }
