@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/depoimentos.css">
     <link rel="stylesheet" href="assets/css/formulario.css">
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <title>ARC - Finanças e Investimentos</title>
 </head>
 <body>
@@ -42,11 +43,11 @@
 	<main class="container main">
 		<div class="reuniao">
 			<img class="reuniao__foto" src="assets/img/Alexandre.png" alt="Foto de Alexandre">
-			<button class="reuniao__butao">Agende sua reunião!</button>
-			<button class="reuniao__whats">
+			<a class="reuniao__butao" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arcfinancas/consultoria?hide_gdpr_banner=1'});return false;">Agende sua reunião</a>
+			<a href="https://api.whatsapp.com/send?phone=5586998305198&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20consultoria%20financeira." class="reuniao__whats" target="_blank">
 				<i class="fa-brands fa-whatsapp"></i>
 				whatsapp
-			</button>
+			</a>
 		</div>
 	</main>
 	<div class="container servicos">
@@ -138,5 +139,6 @@
 			</a>
 		</div>
 	</footer>
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </body>
 </html>
