@@ -14,7 +14,7 @@
 }
 
 .servicos__caixa {
-    background-image: url(/assets/img/caixa-organiz.svg);
+    background-image: url("../assets/img/caixa-organiz.svg");
     background-size: 170px;
     background-repeat: no-repeat;
     background-position: center 50px;
@@ -32,24 +32,24 @@
 }
 
 .servicos__caixa:nth-child(1) {
-    background-image: url('/assets/img/servicos1.png');
+    background-image: url("../img/servicos1.png");
 }
 
 .servicos__caixa:nth-child(2) {
-    background-image: url('/assets/img/servicos2.png');
+    background-image: url("../img/servicos2.png");
 }
 
 .servicos__caixa:nth-child(3) {
-    background-image: url('/assets/img/servicos3.png');
+    background-image: url("../img/servicos3.png");
 }
 
 .servicos__caixa:nth-child(4) {
-    background-image: url('/assets/img/servicos4.png');
+    background-image: url("../img/servicos4.png");
     background-position: center 30px;
 }
 
 .servicos__caixa:nth-child(5) {
-    background-image: url('/assets/img/servicos5.png');
+    background-image: url("../img/servicos5.png");
 }
 
 .servicos__caixa:hover {
