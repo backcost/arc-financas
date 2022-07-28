@@ -24,7 +24,7 @@
 .reuniao__foto {
     height: 590px;
     margin: 0 -430px -100px 0;
-    background-image: url(/assets/img/estrela2.png);
+    background-image: url(./assets/img/estrela2.png);
     background-size: 200px;
     background-position: 410px 200px;
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@
 }
 
 .reuniao__whats::before {
-    content: url(/assets/img/AlexBotao.png);
+    content: url(./assets/img/AlexBotao.png);
     position: fixed;
     right: 60px;
     bottom: 155px;    
