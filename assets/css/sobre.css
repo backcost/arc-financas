@@ -1,12 +1,16 @@
-.sobre {
-    background-image: url("../assets/img/arc_neon.png"), url("../assets/img/estrela3.png"), url("../assets/img/estrela3.png");
+.sobre__limite {
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/arc_neon.png"), url("../img/estrela3.png"), url("../img/estrela3.png");
     background-size: 250px, 150px, 250px;
-    background-position: 270px 50px, 450px 570px, 1000px -10px;
+    background-position: 0px 33px, 190px 570px, 850px -10px;
     background-repeat: no-repeat;
 }
 
 .sobre__texto {
-    width: 600px;
+    width: 740px;
     text-align: left;
     color: var(--white);
     display: flex;
@@ -24,6 +28,6 @@
 
 .sobre__texto p {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 100;
 }
