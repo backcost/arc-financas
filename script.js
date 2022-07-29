@@ -7,9 +7,7 @@ const textos = [{titulo:'Organização Financeira', texto: [['Você saberá quan
 {titulo:'Análise de Financiamentos', texto: ['Se você já tem um financiamento, está pagando caro ou não sabe se fez o melhor negócio, analisamos o seu financiamento e tentamos achar a melhor solução para ele, planejando até mesmo uma quitação antecipada ou portabilidade para outro banco.']}]  
 
 
-let atual = ''
 const mudarTexto = (object, id) => {
-    atual = object.children[0]
     let texto = ''
     for (let el of textos[id-1].texto) {
         texto += `<p>${el}</p>`
@@ -17,7 +15,7 @@ const mudarTexto = (object, id) => {
     let titulo = textos[id-1].titulo
 
     object.innerHTML = 
-    `<h4 class="servicos__texto--hover texto__${id}">${titulo}</h4>
+    `<h4 class="servicos__titulo--hover">${titulo}</h4>
     ${texto}
     `
 }
@@ -25,6 +23,6 @@ const mudarTexto = (object, id) => {
 const desfazer = (object, id) => {
     let titulo = textos[id-1].titulo
     object.innerHTML = 
-    `<h4 class="servicos__texto texto__${id}">${titulo}</h4>
+    `<h4 class="servicos__titulo texto__${id}">${titulo}</h4>
     `
 }

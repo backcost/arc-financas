@@ -66,10 +66,10 @@
     text-transform: uppercase;
     font-size: 14.5px;
     font-family: 'Fontena';
-    margin-bottom: 10px;
+    margin: 6px 0;
 }
 
-.servicos__texto--hover {
+.servicos__titulo--hover {
     font-family: 'Kenyan';
     color: var(--superdarkjunglegreen);
     text-align: center;
@@ -77,11 +77,11 @@
     justify-content: center;
     font-size: 25px;
     font-weight: normal;
-    margin-top: -50px;
-    margin-bottom: 65px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-.servicos__texto {
+.servicos__titulo {
     font-family: 'Kenyan';
     color: var(--white);
     text-align: center;
