@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="assets/css/reuniao.css">
     <link rel="stylesheet" href="assets/css/servicos.css">
     <link rel="stylesheet" href="assets/css/sobre.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/entrevistas.css">
     <link rel="stylesheet" href="assets/css/depoimentos.css">
     <link rel="stylesheet" href="assets/css/formulario.css">
+	<link rel="stylesheet" href="assets/css/footer.css">
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <title>ARC - Finanças e Investimentos</title>
 </head>
@@ -26,16 +27,16 @@
 		<nav class="menu">
 			<ul class="menu__list">
 				<li class="menu__item">
-					<a href="#">Serviços</a>
+					<a href="#servicos">Serviços</a>
 				</li>
 				<li class="menu__item">
-					<a href="#">Sobre</a>
+					<a href="#sobre">Sobre</a>
 				</li>
 				<li class="menu__item">
-					<a href="#">Entrevistas</a>
+					<a href="#entrevistas">Entrevistas</a>
 				</li>
 				<li class="menu__item">
-					<a href="#">Depoimentos</a>
+					<a href="#depoimentos">Depoimentos</a>
 				</li>
 			</ul>
 		</nav>
@@ -50,7 +51,7 @@
 			</a>
 		</div>
 	</main>
-	<div class="container servicos">
+	<div class="container servicos" id="servicos">
 		<div class="servicos_limite">
 			<div class="servicos__caixa" onmouseenter='mudarTexto(this, 1)' onmouseleave="desfazer(this, 1)">
 				<h4 class="servicos__titulo texto__1">Organização Financeira</h4>
@@ -64,12 +65,12 @@
 			<div class="servicos__caixa" onmouseenter='mudarTexto(this, 4)' onmouseleave="desfazer(this, 4)">
 				<h4 class="servicos__titulo texto__4">Independeência Financeira / Aposentadoria</h4>
 			</div>
-			<div class="servicos__caixa" onmouseenter="setTimeout(mudarTexto(this, 5), 2000)" onmouseleave="desfazer(this, 5)">
+			<div class="servicos__caixa" onmouseenter="mudarTexto(this, 5)" onmouseleave="desfazer(this, 5)">
 				<h4 class="servicos__titulo texto__5">Análise de Financiamentos</h4>
 			</div>
 		</div>
 	</div>
-	<div class="container sobre">
+	<div class="container sobre" id="sobre">
 		<div class="sobre__texto">
 			<h2>Sobre a ARC Finanças</h2>
 			<p>	
@@ -102,6 +103,15 @@
 				A partir disso surgiu a ARC Planejamento Financeiro.
 			</p>
 		</div>
+	</div>
+	<div class="container entrevistas" id="entrevistas">
+
+	</div>
+	<div class="container depoimentos" id="depoimentos">
+
+	</div>
+	<div class="container formulario">
+
 	</div>
 	<footer class="container footer">
 		<!-- <form class="formulario">

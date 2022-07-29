@@ -1,4 +1,4 @@
-.servicos, .sobre {
+.servicos, .sobre, .entrevistas, .depoimentos, .formulario {
     background-color: var(--superdarkjunglegreen);
     display: flex;
     justify-content: center;
