@@ -1,0 +1,23 @@
+.entrevistas {
+    background-color: var(--superdarkjunglegreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entrevistas__titulo {
+    height: 150px;
+    width: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kenyan';
+    font-size: 40px;
+    color: var(--white);
+    background-image: url("../img/estrela3.png");
+    background-size: 150px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: -250px;
+}

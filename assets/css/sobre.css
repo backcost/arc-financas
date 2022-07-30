@@ -1,3 +1,10 @@
+.sobre {
+    background-color: var(--superdarkjunglegreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .sobre__limite {
     width: 1150px;
     display: flex;
@@ -5,7 +12,7 @@
     align-items: center;
     background-image: url("../img/arc_neon.png"), url("../img/estrela3.png"), url("../img/estrela3.png");
     background-size: 250px, 150px, 250px;
-    background-position: 0px 33px, 190px 570px, 850px -10px;
+    background-position: 30px 33px, 190px 570px, 850px -10px;
     background-repeat: no-repeat;
 }
 

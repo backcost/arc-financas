@@ -1,19 +1,23 @@
 .depoimentos {
+    background-color: var(--superdarkjunglegreen);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.depoimentos__slider {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.slider__item {
-    align-self: center;
-    text-align: justify;
-    width: 50%;
+.depoimentos__titulo {
+    height: 150px;
+    width: 445px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kenyan';
+    font-size: 40px;
+    color: var(--white);
+    background-image: url("../img/estrela3.png");
+    background-size: 150px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: -315px;
 }
