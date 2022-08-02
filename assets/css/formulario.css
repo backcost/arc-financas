@@ -28,19 +28,23 @@
     width: 660px;
     height: 40px;
     border: 6px solid var(--policeblue);
-    color: var(--superdarkjunglegreen);
     border-radius: 10px;
     padding: 2px 10px;
     font-size: 17px;
     text-align: center;
     margin-bottom: 16px;
     background-color: var(--crayola);
-    text-transform: uppercase;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .formulario input:focus {
     border-color: var(--white);
+}
+
+.formulario input::placeholder {
+    color: var(--superdarkjunglegreen);
+    opacity: 0.7;
+    text-transform: uppercase;
 }
 
 .formulario__botao {
@@ -55,12 +59,12 @@
     background-color: var(--crayola);
     font-weight: bold;
     text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
 
 .formulario__botao:hover {
-    background-color: var(--white);
     color: var(--black);
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.2s;
 }

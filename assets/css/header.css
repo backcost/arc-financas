@@ -30,3 +30,9 @@
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
 }
+
+@media only screen and (max-width: 576px) {
+    .header {
+      flex-direction: column;
+    }
+}

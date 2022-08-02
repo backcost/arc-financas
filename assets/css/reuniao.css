@@ -80,3 +80,27 @@
     right: 40px;
     bottom: 155px;    
 }
+
+@media only screen and (max-width: 576px) {
+    .reuniao__butao {
+        font-size: 45px;
+        font-weight: 300;
+        width: 380px;
+        height: 100px;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--superdarkjunglegreen);
+        text-transform: uppercase;
+        background-color: var(--mustardyellow);
+        border-radius: 23px;
+/*         background-image: url("../img/calendar-regular.svg");
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: 93% 45%; */
+    }
+
+    .reuniao__foto {
+        height: 390px;
+        margin: 0 -30px -100px 0;
+    }
+}
