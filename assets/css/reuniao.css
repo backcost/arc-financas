@@ -119,3 +119,42 @@
         display: none;
     }
 }
+
+@media only screen and (max-width: 720px) {
+/*     .main {
+        height: 600px;
+    } */
+
+    .reuniao {
+        width: 95%;
+        background-size: 540px, 170px;
+        background-position: 0px 150px, 0px 50px;
+    }
+
+    .reuniao__foto {
+        height: 400px;
+        margin: 0 -110px -100px 0;
+        background-size: 160px;
+        background-position: 240px 150px;
+    }
+    
+    .reuniao__butao {
+        width: 350px;
+    }
+
+    .reuniao__whats {
+        width: 70px;
+    }
+
+    .reuniao__whats i {
+        margin-left: 25px;
+    }
+    
+    .reuniao__whats::before {
+        content: none;   
+    }
+
+    .reuniao__whats p {
+        display: none;
+    }
+}
