@@ -31,8 +31,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 992px) {
     .header {
       flex-direction: column;
+    }
+
+    .menu__item {
+        margin-left: 40px;
+        list-style: none;
     }
 }

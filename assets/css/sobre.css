@@ -38,3 +38,27 @@
     font-size: 22px;
     font-weight: 100;
 }
+
+@media only screen and (max-width: 992px) {
+    .sobre__limite {
+        width: 100%;
+        background-size: 160px, 150px, 150px;
+        background-position: -15px 33px, 50px 570px, 550px 30px;
+    }
+    .sobre__texto {
+        width: 70%;
+        position: relative;
+        left: 55px;
+    }
+
+/*     .sobre__texto h2 {
+        padding-top: 40px;
+        font-family: 'Kenyan';
+        font-size: 40px;
+        margin-bottom: 15px;
+    } */
+    
+    .sobre__texto p {
+        font-size: 18px;
+    }
+}
