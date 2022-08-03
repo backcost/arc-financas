@@ -14,7 +14,6 @@
 }
 
 .servicos__caixa {
-    background-image: url("../assets/img/caixa-organiz.svg");
     background-size: 170px;
     background-repeat: no-repeat;
     background-position: center 70px;
@@ -112,4 +111,17 @@
     position: relative;
     top: 60px;
     width: 140px;
+}
+
+@media only screen and (max-width: 510px) {
+    .servicos__caixa {
+        background-size: 170px;
+        background-position: center 45px;
+        padding: 40px;
+        height: 180px;
+        width: 180px;
+        background-color: var(--charcoal);
+        border-radius: 30px;
+        margin: 0 0 18px;
+    }
 }
