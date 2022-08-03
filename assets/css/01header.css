@@ -16,6 +16,7 @@
 .menu__list {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .menu__item {
@@ -26,7 +27,6 @@
 .menu__first {
     margin-left: 0;
 }
-
 
 .menu a {
     font-size: 20px;
@@ -44,10 +44,16 @@
 
 @media only screen and (max-width: 720px) {
     .menu__item {
-        margin-left: 28px;
+        margin-left: 30px;
     }
 
-    .menu a {
-        font-size: 3.35vw;
+    .menu__first {
+        margin-left: 0;
     }
+    
+    .menu a {
+        font-size: 3vw;
+    }
+
+    
 }

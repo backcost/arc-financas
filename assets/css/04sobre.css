@@ -64,11 +64,11 @@
 }
 
 @media only screen and (max-width: 720px) {
-    .menu__item {
+/*     .menu__item {
         margin-left: 28px;
     }
 
     .menu a {
         font-size: 3.35vw;
-    }
+    } */
 }
