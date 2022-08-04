@@ -27,3 +27,14 @@
         left: -65px;
     }
 }
+
+@media only screen and (max-width: 570px) {
+    .depoimentos__titulo {
+        left: -30px;
+        width: 310px;
+        font-size: 34px;
+        background-size: 110px;
+        background-position: 10px 20px;
+        justify-content: right;
+    }
+}

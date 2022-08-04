@@ -78,3 +78,22 @@
         width: 400px;
     }
 }
+
+@media only screen and (max-width: 570px) {
+    .formulario__titulo {
+        left: -20px;
+        width: 310px;
+        font-size: 34px;
+        background-size: 110px;
+        background-position: 0 20px;
+        justify-content: right;
+    }
+
+    .formulario input {
+        width: 60vw;
+    }
+
+    .formulario__botao {
+        width: 40vw;
+    }
+}

@@ -7,7 +7,7 @@
 
 .entrevistas__titulo {
     height: 150px;
-    width: 580px;
+    width: 288px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,11 +19,22 @@
     background-position: 0px 0px;
     background-repeat: no-repeat;
     position: relative;
-    left: -250px;
+    left: -395px;
 }
 
 @media only screen and (max-width: 1100px) {
     .entrevistas__titulo {
-        left: 0px;
+        left: -145px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .entrevistas__titulo {
+        left: -92px;
+        width: 165px;
+        font-size: 34px;
+        background-size: 110px;
+        background-position: 0 20px;
+        justify-content: right;
     }
 }

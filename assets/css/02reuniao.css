@@ -164,19 +164,21 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
     .reuniao__foto {
         height: 290px;
-        margin: 0 -150px -100px 0;
-        background-size: 80px;
-        background-position: 170px 130px;
+        margin: 0 -100px -50px 0;
+        background-position: 155px 110px;
     }
     
     .reuniao__butao {
         width: 280px;
-        font-size: 30px;
-        background-size: 24px;
-        background-position: 93% 48%;
         height: 70px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .reuniao__foto {
+        margin: 0 -75px -50px 0;
     }
 }
