@@ -31,8 +31,39 @@
     color: var(--superdarkjunglegreen);
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 900px) {
     .footer {
         flex-direction: column;
+    }
+
+    .social-media__item {
+        margin-top: 10px;
+    }
+
+    .social-media__item:last-child {
+        margin-right: 0;
+    }
+
+    .social-media p {
+        margin: 30px 15px;
+    }
+
+    .email {
+        margin-left: 0;
+    }    
+}
+
+@media only screen and (max-width: 510px) {
+    .social-media:last-child {
+        flex-direction: column;
+    }
+
+    .social-media p {
+        display: none;
+    }
+
+    .email {
+        font-size: 18px;
+        margin-top: 20px;
     }
 }
