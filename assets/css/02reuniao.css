@@ -141,6 +141,11 @@
     .reuniao__butao {
         width: 450px;
     }
+
+    .reuniao__whats {
+        right: 10px;
+        bottom: 10px;
+    }
 }
 
 @media only screen and (max-width: 510px) {
