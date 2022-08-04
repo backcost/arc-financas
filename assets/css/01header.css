@@ -64,7 +64,22 @@
     .menu__first {
         margin-left: 0;
     }
+
     .menu a {
         font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .menu__item {
+        margin-left: 19px;
+    }
+
+    .menu__first {
+        margin-left: 0;
+    }
+    
+    .menu a {
+        font-size: 12px;
     }
 }

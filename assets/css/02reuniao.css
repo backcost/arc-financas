@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../img/predioarc.png"), url("/assets/img/estrela1.png");
+    background-image: url("../img/predioarc.png"), url("../img/estrela1.png");
     background-size: 740px, 230px;
     background-position: 90px 150px, 60px 50px;
     background-repeat: no-repeat;
