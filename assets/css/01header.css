@@ -57,6 +57,10 @@
 }
 
 @media only screen and (max-width: 400px) {
+    .logo {
+        height: 90px;
+    }
+
     .menu__item {
         margin-left: 23px;
     }
