@@ -187,6 +187,7 @@
     .reuniao__whats {
         width: 63px;
         height: 63px;
+        z-index: 1;
     }
 
     .reuniao__whats i {
@@ -199,4 +200,8 @@
     .reuniao__foto {
         margin: 0 -75px -50px 0;
     }
+}
+
+@media only screen and (ma) {
+    
 }

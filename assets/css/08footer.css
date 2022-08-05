@@ -34,6 +34,7 @@
 @media only screen and (max-width: 900px) {
     .footer {
         flex-direction: column;
+        z-index: 2;
     }
 
     .social-media__item {
