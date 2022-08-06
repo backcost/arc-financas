@@ -1,6 +1,7 @@
 .entrevistas {
     background-color: var(--superdarkjunglegreen);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -20,6 +21,16 @@
     background-repeat: no-repeat;
     position: relative;
     left: -395px;
+}
+
+.entrevistas__wrapper {
+    width: calc(16*3.6vw);
+    height: calc(9*3.6vw);
+    max-width: calc(16*60px);
+    max-height: calc(9*60px);
+    border: 5px solid var(--charcoal);
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 1100px) {
