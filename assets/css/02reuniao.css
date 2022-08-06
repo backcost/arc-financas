@@ -55,11 +55,11 @@
     position: fixed;
     right: 30px;
     bottom: 90px;
-    font-family: 'Kenyan';
-    font-size: 25px;
-    font-weight: 300;
-    width: 200px;
-    height: 70px;
+    font-family: 'Canter';
+    font-size: 29px;
+    font-weight: 700;
+    width: 180px;
+    height: 55px;
     text-transform: uppercase;
     background-color: var(--crayola);
     border-radius: 40px;
@@ -70,15 +70,19 @@
 }
 
 .reuniao__whats i {
-    margin-left: 40px;
-    margin-right: 10px;
+    margin-left: 33px;
+    margin-right: 8px;
+}
+
+.reuniao__whats p {
+    margin-top: 24.2px;
 }
 
 .reuniao__whats::before {
     content: url("../img/AlexBotao.png");
     position: fixed;
-    right: 40px;
-    bottom: 155px;    
+    right: 30px;
+    bottom: 141px;    
 }
 
 @media only screen and (max-width: 1100px) {
@@ -105,6 +109,7 @@
 
     .reuniao__whats {
         width: 70px;
+        height: 70px;
         border: 5px solid var(--crayolaLight);
         background-color: var(--crayola);
     }

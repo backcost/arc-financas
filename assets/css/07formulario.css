@@ -30,20 +30,21 @@
     border: 6px solid var(--policeblue);
     border-radius: 10px;
     padding: 2px 10px;
-    font-size: 17px;
+    font-size: 25px;
     text-align: center;
     margin-bottom: 16px;
     background-color: var(--crayola);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Canter', Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .formulario input:focus {
     border-color: var(--white);
+    font-weight: 300;
+    font-family: 'Kenyan', Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .formulario input::placeholder {
     color: var(--superdarkjunglegreen);
-    opacity: 0.7;
     text-transform: uppercase;
 }
 
@@ -54,12 +55,12 @@
     color: var(--superdarkjunglegreen);
     border-radius: 10px;
     padding: 2px 10px;
-    font-size: 17px;
+    font-size: 22px;
     margin: 12px 0 80px;
     background-color: var(--crayola);
-    font-weight: bold;
+    font-weight: 300;
     text-transform: uppercase;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Kenyan', Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
 
