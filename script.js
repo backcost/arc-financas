@@ -29,8 +29,8 @@ const desfazer = (object, id) => {
 
 document.querySelector("#depoimentos__items").addEventListener("wheel", event => {
     if(event.deltaY > 0) {
-        event.target.scrollBy(300,0)
+        event.target.scrollBy(1,0)
     } else {
-        event.target.scrollBy(-300,0)
+        event.target.scrollBy(-1,0)
     }
 })
