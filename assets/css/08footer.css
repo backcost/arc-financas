@@ -6,6 +6,7 @@
     background-color: var(--crayola);
     justify-content: space-between;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .social-media {

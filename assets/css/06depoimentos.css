@@ -58,6 +58,22 @@
     pointer-events: none;
 }
 
+.fa-circle-chevron-left, .fa-circle-chevron-right {
+    color: aliceblue;
+    position: relative;
+    bottom: 50%;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.fa-circle-chevron-left {
+    left: 15px;
+}
+
+.fa-circle-chevron-right {
+    left: 89%;
+}
+
 @media only screen and (max-width: 1400px) {
     .depoimentos__wrapper {
         width: 1000px;
@@ -75,6 +91,10 @@
     .depoimentos__wrapper {
         width: calc(9*7vw);
         height: calc(9*7vw);
+    }
+
+    .fa-circle-chevron-right {
+        left: calc(9*7vw - 65px);
     }
 }
 
@@ -94,11 +114,19 @@
         width: calc(9*7.7vw);
         height: calc(9*7.7vw);
     }
+
+    .fa-circle-chevron-right {
+        left: calc(9*7.7vw - 65px);
+    }
 }
 
 @media only screen and (max-width: 400px) {
     .depoimentos__wrapper {
         width: calc(9*8.8vw);
         height: calc(9*8.8vw);
+    }
+
+    .fa-circle-chevron-right {
+        left: calc(9*8.8vw - 65px);
     }
 }
