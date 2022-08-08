@@ -44,3 +44,33 @@ document.querySelector("#depoimentos__right").addEventListener("click", () => {
 document.querySelector("#depoimentos__left").addEventListener("click", () => {
     depoimentos.scrollBy(-1,0)
 })
+
+const entrevistasLista = [
+    "https://www.youtube.com/embed/ROXQWPTcWuI",
+    "https://www.youtube.com/embed/vJMXdPqXHA8",
+    "https://www.youtube.com/embed/HzBYRI4kgaA", 
+    "https://www.youtube.com/embed/oYpTXxqnK88",
+    "https://www.youtube.com/embed/mWjrtFVwJmc",
+    "https://www.youtube.com/embed/hVlCSsXxDds",
+    ]
+
+const entrevistas = document.querySelector("#entrevistas__video")
+
+let entrevistasAtual = 0
+
+document.querySelector("#video__right").addEventListener("click", () => {
+    entrevistasAtual++
+    if(entrevistasAtual > entrevistasLista.length - 1) {
+        entrevistasAtual = 0
+    }
+    entrevistas.setAttribute("src", entrevistasLista[entrevistasAtual])
+})
+
+document.querySelector("#video__left").addEventListener("click", () => {
+    entrevistasAtual--
+    if(entrevistasAtual < 0) {
+        entrevistasAtual = 5
+    }
+    entrevistas.setAttribute("src", entrevistasLista[entrevistasAtual])
+})
+
