@@ -26,6 +26,11 @@
     list-style: none;
 }
 
+.menu a:hover {
+    color: var(--mustardyellow);
+    transition: color 0.4s;
+}
+
 .menu__first {
     margin-left: 0;
 }

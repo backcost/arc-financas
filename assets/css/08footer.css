@@ -25,6 +25,11 @@
     padding: 5px 11px;
 }
 
+.social-media__item:hover {
+    border: 6px solid var(--mustardyellow);
+    transition: border 0.4s;
+}
+
 .email {
     font-family: 'Poppins';
     margin-left: 20px;

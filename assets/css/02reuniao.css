@@ -51,6 +51,11 @@
     background-position: 93% 45%;
 }
 
+.reuniao__butao:hover {
+    box-shadow: 1px -1px 20px 5px white;
+    transition: box-shadow 1s;
+}
+
 .reuniao__whats {
     position: fixed;
     right: 30px;
@@ -67,6 +72,11 @@
     align-items: center;
     display: flex;
     color: var(--superdarkjunglegreen);
+}
+
+.reuniao__whats:hover {
+    background-color: var(--mustardyellow);
+    transition: background-color 0.5s;
 }
 
 .reuniao__whats i {
@@ -112,6 +122,11 @@
         height: 70px;
         border: 5px solid var(--crayolaLight);
         background-color: var(--crayola);
+    }
+
+    .reuniao__whats:hover {
+        border: 5px solid var(--white);
+        transition: border 1s;
     }
 
     .reuniao__whats i {
