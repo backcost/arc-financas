@@ -64,8 +64,16 @@ const entrevistas = document.querySelector("#entrevistas__video")
 
 let entrevistasAtual = 0
 
-document.querySelector("#video__right").addEventListener("click", () => {
+const removerClasse = () => {
     document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.remove('circulos__circulo--ativo')
+}
+
+const addClasse = () => {
+    document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.add('circulos__circulo--ativo')
+}
+
+document.querySelector("#video__right").addEventListener("click", () => {
+    removerClasse()
 
     entrevistasAtual++
     if(entrevistasAtual > entrevistasLista.length - 1) {
@@ -73,11 +81,11 @@ document.querySelector("#video__right").addEventListener("click", () => {
     }
     entrevistas.setAttribute("src", entrevistasLista[entrevistasAtual])
 
-    document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.add('circulos__circulo--ativo')
+    addClasse()
 })
 
 document.querySelector("#video__left").addEventListener("click", () => {
-    document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.remove('circulos__circulo--ativo')
+    removerClasse()
 
     entrevistasAtual--
     if(entrevistasAtual < 0) {
@@ -85,21 +93,22 @@ document.querySelector("#video__left").addEventListener("click", () => {
     }
     entrevistas.setAttribute("src", entrevistasLista[entrevistasAtual])
 
-    document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.add('circulos__circulo--ativo')
+    addClasse()
 })
 
 const mudarCirculo = (idnumber) => {
     document.querySelector(`#entrevistas__circulo${idnumber}`).addEventListener("click", () => {
-        document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.remove('circulos__circulo--ativo')
+        removerClasse()
     
         entrevistasAtual = idnumber
     
         entrevistas.setAttribute("src", entrevistasLista[entrevistasAtual])
     
-        document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.add('circulos__circulo--ativo')
+        addClasse()
     })
 }
 
 for (let i = 0; i < 6; i++) {
     mudarCirculo(i)
 }
+
