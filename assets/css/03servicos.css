@@ -44,7 +44,7 @@
 
 .servicos__caixa:nth-child(4) {
     background-image: url("../img/servicos4.png");
-    background-position: center 30px;
+    background-position: center 48px;
 }
 
 .servicos__caixa:nth-child(5) {
@@ -135,4 +135,13 @@
     .servicos__caixa p {
         font-size: 19px;
     }  
+
+    .servicos__caixa:nth-child(4) {
+        background-position: center 30px;
+    }
+
+    .texto__4 {
+        top: 80px;
+        font-size: 22px;
+    }
 }
