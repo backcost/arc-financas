@@ -27,6 +27,9 @@ const desfazer = (object, id) => {
     `
 }
 
+
+
+
 const depoimentos = document.querySelector("#depoimentos__items")
 
 depoimentos.addEventListener("wheel", event => {
@@ -45,6 +48,9 @@ document.querySelector("#depoimentos__left").addEventListener("click", () => {
     depoimentos.scrollBy(-1,0)
 })
 
+
+
+
 const entrevistasLista = [
     "https://www.youtube.com/embed/ROXQWPTcWuI",
     "https://www.youtube.com/embed/vJMXdPqXHA8",
@@ -59,18 +65,26 @@ const entrevistas = document.querySelector("#entrevistas__video")
 let entrevistasAtual = 0
 
 document.querySelector("#video__right").addEventListener("click", () => {
+    let circuloAtual = document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.remove('circulos__circulo--ativo')
+
     entrevistasAtual++
     if(entrevistasAtual > entrevistasLista.length - 1) {
         entrevistasAtual = 0
     }
     entrevistas.setAttribute("src", entrevistasLista[entrevistasAtual])
+
+    circuloAtual = document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.add('circulos__circulo--ativo')
 })
 
 document.querySelector("#video__left").addEventListener("click", () => {
+    let circuloAtual = document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.remove('circulos__circulo--ativo')
+
     entrevistasAtual--
     if(entrevistasAtual < 0) {
         entrevistasAtual = 5
     }
     entrevistas.setAttribute("src", entrevistasLista[entrevistasAtual])
+
+    circuloAtual = document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.add('circulos__circulo--ativo')
 })
 
