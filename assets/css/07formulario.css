@@ -37,11 +37,6 @@
     font-family: 'Canter', Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.formulario input:focus {
-    border-color: var(--white);
-    font-weight: 300;
-    font-family: 'Kenyan', Cochin, Georgia, Times, 'Times New Roman', serif;
-}
 
 .formulario input::placeholder {
     color: var(--superdarkjunglegreen);
@@ -58,16 +53,16 @@
     font-size: 22px;
     margin: 12px 0 40px;
     background-color: var(--crayola);
-    font-weight: 300;
+    font-weight: 1000;
     text-transform: uppercase;
-    font-family: 'Kenyan', Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Canter', Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
 
 .formulario__botao:hover {
-    color: var(--black);
+    background-color: var(--mustardyellow);
     cursor: pointer;
-    transition: 0.2s;
+    transition: background-color 0.8s;
 }
 
 @media only screen and (max-width: 1100px) {
