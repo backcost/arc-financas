@@ -18,6 +18,9 @@ const mudarTexto = (object, id) => {
     `<h4 class="servicos__titulo--hover">${titulo}</h4>
     ${texto}
     `
+
+    object.classList.add('servicos__caixa--hover')
+    object.classList.remove('servicos__caixa')
 }
 
 const desfazer = (object, id) => {
@@ -25,6 +28,9 @@ const desfazer = (object, id) => {
     object.innerHTML = 
     `<h4 class="servicos__titulo texto__${id}">${titulo}</h4>
     `
+
+    object.classList.remove('servicos__caixa--hover')
+    object.classList.add('servicos__caixa')
 }
 
 

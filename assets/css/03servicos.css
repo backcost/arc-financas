@@ -51,14 +51,24 @@
     background-image: url("../img/servicos5.png");
 }
 
-.servicos__caixa:hover {
+.servicos__caixa--hover {
     background-color: var(--crayola);
     cursor: default;
     background-image: none;
     transition: all 2s;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 260px;
+    width: 260px;
+    border-radius: 30px;
+    margin: 0 0 18px 18px;
 }
 
-.servicos__caixa p {
+.servicos__caixa--hover p {
     color: var(--superdarkjunglegreen);
     text-align: center;
     align-items: center;
@@ -116,14 +126,10 @@
 }
 
 @media only screen and (max-width: 510px) {
-    .servicos__caixa {
-        background-size: 170px;
+    .servicos__caixa, .servicos__caixa--hover {
         background-position: center 45px;
-        padding: 40px;
         height: 180px;
         width: 180px;
-        background-color: var(--charcoal);
-        border-radius: 30px;
         margin: 0 0 18px;
     }
 
@@ -132,7 +138,7 @@
         margin: 0;
     }
 
-    .servicos__caixa p {
+    .servicos__caixa--hover p {
         font-size: 19px;
     }  
 
