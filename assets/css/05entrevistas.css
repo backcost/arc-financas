@@ -50,8 +50,6 @@
 
 #video__left:hover, #video__right:hover {
     color: var(--crayola);
-    transform: translateY(1px);
-    transition: transform 0.3s;
 }
 
 #video__left:active, #video__right:active {

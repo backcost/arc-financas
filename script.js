@@ -65,7 +65,7 @@ const entrevistas = document.querySelector("#entrevistas__video")
 let entrevistasAtual = 0
 
 document.querySelector("#video__right").addEventListener("click", () => {
-    let circuloAtual = document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.remove('circulos__circulo--ativo')
+    document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.remove('circulos__circulo--ativo')
 
     entrevistasAtual++
     if(entrevistasAtual > entrevistasLista.length - 1) {
@@ -73,11 +73,11 @@ document.querySelector("#video__right").addEventListener("click", () => {
     }
     entrevistas.setAttribute("src", entrevistasLista[entrevistasAtual])
 
-    circuloAtual = document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.add('circulos__circulo--ativo')
+    document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.add('circulos__circulo--ativo')
 })
 
 document.querySelector("#video__left").addEventListener("click", () => {
-    let circuloAtual = document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.remove('circulos__circulo--ativo')
+    document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.remove('circulos__circulo--ativo')
 
     entrevistasAtual--
     if(entrevistasAtual < 0) {
@@ -85,6 +85,21 @@ document.querySelector("#video__left").addEventListener("click", () => {
     }
     entrevistas.setAttribute("src", entrevistasLista[entrevistasAtual])
 
-    circuloAtual = document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.add('circulos__circulo--ativo')
+    document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.add('circulos__circulo--ativo')
 })
 
+const mudarCirculo = (idnumber) => {
+    document.querySelector(`#entrevistas__circulo${idnumber}`).addEventListener("click", () => {
+        document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.remove('circulos__circulo--ativo')
+    
+        entrevistasAtual = idnumber
+    
+        entrevistas.setAttribute("src", entrevistasLista[entrevistasAtual])
+    
+        document.querySelector(`#entrevistas__circulo${entrevistasAtual}`).classList.add('circulos__circulo--ativo')
+    })
+}
+
+for (let i = 0; i < 6; i++) {
+    mudarCirculo(i)
+}
