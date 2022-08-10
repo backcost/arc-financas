@@ -2,10 +2,28 @@ const textos = [{titulo:'Organização Financeira', texto: [['Você saberá quan
 ['É nessa parte que falamos sobre possíveis financiamentos ou controle de dívidas.']]},
 {titulo:'Reserva de Emergência', texto: ['Vamos planejar o tamanho da reserva financeira ideal para suprir suas necessidades caso aconteça alguma emergência.']},
 {titulo:'Investimentos', texto: ['Juntos, descobriremos o seu perfil de investidor, sua aptidão ao risco e começaremos nessa maravilhosa jornada dos investimentos, através de educação financeira e consultoria.']},
-{titulo:'Independeência Financeira / Aposentadoria', texto: ['A sua independência financeira será planejada conforme seus objetivos futuros e seu perfil de investidor.',
+{titulo:'Independência Financeira / Aposentadoria', texto: ['A sua independência financeira será planejada conforme seus objetivos futuros e seu perfil de investidor.',
 'Vamos criar uma metodologia de aportes que faça sentido para sua vida financeira e, com o pensamento no longo prazo, conseguir gerar uma fonte de renda para o seu futuro.']},
 {titulo:'Análise de Financiamentos', texto: ['Se você já tem um financiamento, está pagando caro ou não sabe se fez o melhor negócio, analisamos o seu financiamento e tentamos achar a melhor solução para ele, planejando até mesmo uma quitação antecipada ou portabilidade para outro banco.']}]  
 
+const caixas = document.querySelectorAll(".servicos__caixa")
+
+const desfazer = (id) => {
+    let caixasEditavel = [...caixas]
+    caixasEditavel.splice(id-1, 1)
+
+    for (let el of caixasEditavel) {
+        let elID = Number(/\d/.exec(el.id))
+        let titulo = textos[elID].titulo
+
+        el.classList.add('servicos__caixa')
+        el.classList.remove('servicos__caixa--hover')
+
+        el.innerHTML = 
+        `<h4 class="servicos__titulo texto__${elID+1}">${titulo}</h4>
+        `
+    }
+}
 
 const mudarTexto = (object, id) => {
     let texto = ''
@@ -18,21 +36,11 @@ const mudarTexto = (object, id) => {
     `<h4 class="servicos__titulo--hover">${titulo}</h4>
     ${texto}
     `
-
     object.classList.add('servicos__caixa--hover')
     object.classList.remove('servicos__caixa')
+
+    desfazer(id)
 }
-
-const desfazer = (object, id) => {
-    let titulo = textos[id-1].titulo
-    object.innerHTML = 
-    `<h4 class="servicos__titulo texto__${id}">${titulo}</h4>
-    `
-
-    object.classList.remove('servicos__caixa--hover')
-    object.classList.add('servicos__caixa')
-}
-
 
 
 

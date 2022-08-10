@@ -3,7 +3,7 @@
 .main {
     display: flex;
     flex-direction: column;
-    height: 700px;
+    height: 600px;
     align-items: center;
     justify-content: center;
     background: linear-gradient(180deg, var(--oxfordblue) 30%, var(--superdarkjunglegreen) 100%);
