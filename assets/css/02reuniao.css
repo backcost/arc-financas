@@ -29,6 +29,25 @@
     background-repeat: no-repeat;
 }
 
+.reuniao__resumo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 410px;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 495px;
+    left: -150px;
+    text-transform: initial;
+    margin-top: -250px;
+    line-height: 31px;
+}
+
 .reuniao__foto {
     height: 590px;
     margin: 0 -620px -100px 0;
@@ -56,11 +75,11 @@
     background-image: url("../img/calendar-regular.svg");
     background-repeat: no-repeat;
     background-size: 40px;
-    background-position: 93% 45%;
+    background-position: 93% 43%;
 }
 
 .reuniao__butao:hover {
-    box-shadow: 1px -1px 20px 5px white;
+    box-shadow: 1px -1px 20px 5px var(--white);
     transition: box-shadow 1s;
 }
 
@@ -114,6 +133,12 @@
         background-position: 0px 150px, 0px 50px;
     }
 
+    .reuniao__resumo {
+        font-size: 17px;
+        top: 400px;
+        left: -110px;
+    }
+
     .reuniao__foto {
         height: 500px;
         margin: 0 -310px -100px 0;
@@ -160,6 +185,15 @@
         width: 100%;
         background-size: 75%, 20%;
         background-position: 0px 120px, 0px 50px;
+    }
+
+    .reuniao__resumo {
+        width: 310px;
+        font-size: 17px;
+        top: 320px;
+        left: -60px;
+        margin-top: -250px;
+        line-height: 31px;
     }
 
     .reuniao__foto {
