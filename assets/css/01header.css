@@ -2,6 +2,14 @@
 
 @font-face { font-family: Canter; src: url("../fonts/CanterLight.otf"); } 
 
+.header__background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: var(--darkjunglegreen);
+}
+
 .header {
     display: flex;
     align-items: center;

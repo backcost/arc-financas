@@ -22,35 +22,39 @@
     <title>ARC - Finanças e Investimentos</title>
 </head>
 <body>
-	<header class="header container">
-		<img class="logo" src="assets/img/Logo.svg" alt="Arc Finanças" onclick="window.location.reload()">
-		<nav class="menu">
-			<ul class="menu__list">
-				<li class="menu__first menu__item">
-					<a href="#servicos">Serviços</a>
-				</li>
-				<li class="menu__item">
-					<a href="#sobre">Sobre</a>
-				</li>
-				<li class="menu__item">
-					<a href="#entrevistas">Entrevistas</a>
-				</li>
-				<li class="menu__item">
-					<a href="#depoimentos">Depoimentos</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<main class="container main">
-		<div class="reuniao">
-			<img class="reuniao__foto" src="assets/img/Alexandre.png" alt="Foto de Alexandre">
-			<a class="reuniao__butao" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arcfinancas/consultoria?hide_gdpr_banner=1'});return false;">Agende sua reunião</a>
-			<a href="https://api.whatsapp.com/send?phone=5586998305198&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20consultoria%20financeira." class="reuniao__whats" target="_blank">
-				<i class="fa-brands fa-whatsapp"></i>
-				<p>whatsapp</p> 
-			</a>
-		</div>
-	</main>
+	<div class="header__background">
+		<header class="header container">
+			<img class="logo" src="assets/img/Logo.svg" alt="Arc Finanças" onclick="window.location.reload()">
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__first menu__item">
+						<a href="#servicos">Serviços</a>
+					</li>
+					<li class="menu__item">
+						<a href="#sobre">Sobre</a>
+					</li>
+					<li class="menu__item">
+						<a href="#entrevistas">Entrevistas</a>
+					</li>
+					<li class="menu__item">
+						<a href="#depoimentos">Depoimentos</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<div class="main__background">
+		<main class="container main">
+			<div class="reuniao">
+				<img class="reuniao__foto" src="assets/img/Alexandre.png" alt="Foto de Alexandre">
+				<a class="reuniao__butao" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arcfinancas/consultoria?hide_gdpr_banner=1'});return false;">Agende sua reunião</a>
+				<a href="https://api.whatsapp.com/send?phone=5586998305198&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20consultoria%20financeira." class="reuniao__whats" target="_blank">
+					<i class="fa-brands fa-whatsapp"></i>
+					<p>whatsapp</p> 
+				</a>
+			</div>
+		</main>
+	</div>
 	<div class="container servicos" id="servicos">
 		<div class="servicos_limite">
 			<div id="caixa0" class="servicos__caixa" onmouseenter="setTimeout(mudarTexto, 100, this, 1)">
@@ -153,30 +157,32 @@
 		</div>
 		<button class="formulario__botao" type="submit">Cadastrar</button>
 	</form>
-	<footer class="container footer">
-		<div class="social-media">
-			<a class="social-media__item" href="https://www.instagram.com/arcfinancas/" target="_blank">
-				<i class="fa-brands fa-instagram social-media__icon"></i>
-			</a>
-			<a class="social-media__item" href="https://api.whatsapp.com/send?phone=5586998305198&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20consultoria%20financeira." target="_blank">
-				<i class="fa-brands fa-whatsapp"></i>
-			</a>
-			<a class="social-media__item" href="https://www.linkedin.com/in/alexandre-rocha-236744109/" target="_blank">
-				<i class="fa-brands fa-linkedin-in"></i>
-			</a>
-		</div>
-		<div class="social-media">
-			<a href="mailto:arc.financas@gmail.com" class="email">
-				arc.financas@gmail.com
-			</a>
-			<p class="email">
-				-
-			</p>
-			<a href="tel:86998305198" class="email">
-				(86) 9 9830-5198
-			</a>
-		</div>
-	</footer>
+	<div class="footer__background">
+		<footer class="container footer">
+			<div class="social-media">
+				<a class="social-media__item" href="https://www.instagram.com/arcfinancas/" target="_blank">
+					<i class="fa-brands fa-instagram social-media__icon"></i>
+				</a>
+				<a class="social-media__item" href="https://api.whatsapp.com/send?phone=5586998305198&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20consultoria%20financeira." target="_blank">
+					<i class="fa-brands fa-whatsapp"></i>
+				</a>
+				<a class="social-media__item" href="https://www.linkedin.com/in/alexandre-rocha-236744109/" target="_blank">
+					<i class="fa-brands fa-linkedin-in"></i>
+				</a>
+			</div>
+			<div class="social-media">
+				<a href="mailto:arc.financas@gmail.com" class="email">
+					arc.financas@gmail.com
+				</a>
+				<p class="email">
+					-
+				</p>
+				<a href="tel:86998305198" class="email">
+					(86) 9 9830-5198
+				</a>
+			</div>
+		</footer>
+	</div>
 	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 	<script src="script.js"></script>
 </body>

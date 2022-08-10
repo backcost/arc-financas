@@ -3,3 +3,7 @@
     max-width: 1600px;
     padding: 15px 5vw;
 }
+
+body {
+    background-color: var(--superdarkjunglegreen);
+}

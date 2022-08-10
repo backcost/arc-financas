@@ -1,5 +1,13 @@
 @font-face { font-family: Kenyan; src: url("../fonts/kenyancoffeerg.ttf"); } 
 
+.main__background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background: linear-gradient(180deg, var(--oxfordblue) 30%, var(--superdarkjunglegreen) 100%);
+}
+
 .main {
     display: flex;
     flex-direction: column;
