@@ -23,7 +23,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../img/predioarc.png"), url("../img/estrela1.png");
+    background-image: url("../img/predioarc.png");
     background-size: 740px, 230px;
     background-position: 90px 150px, 60px 50px;
     background-repeat: no-repeat;
@@ -36,8 +36,8 @@
     text-align: left;
     width: 410px;
     height: fit-content;
-    color: rgb(255, 255, 255);
-    font-size: 19px;
+    color: var(--white);
+    font-size: 19.5px;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     position: relative;
@@ -46,6 +46,14 @@
     text-transform: initial;
     margin-top: -250px;
     line-height: 31px;
+}
+
+.resumo-titulo { 
+    font-weight: 1400;
+}
+
+.resumo-texto { 
+    font-weight: 600;
 }
 
 .reuniao__foto {
@@ -178,22 +186,23 @@
 
 @media only screen and (max-width: 720px) {
     .main {
-        height: 450px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
     }
 
     .reuniao {
         width: 100%;
-        background-size: 75%, 20%;
-        background-position: 0px 120px, 0px 50px;
+        background-size: 90%, 20%;
+        background-position: 30px 0px, 0px 50px;
     }
 
     .reuniao__resumo {
-        width: 310px;
-        font-size: 17px;
-        top: 320px;
-        left: -60px;
-        margin-top: -250px;
+        width: 400px;
+        font-size: 16px;
         line-height: 31px;
+        top: 300px;
+        left: 20px;
     }
 
     .reuniao__foto {
@@ -201,10 +210,12 @@
         margin: 0 -35vw -100px 0;
         background-size: 100px;
         background-position: 226px 150px;
+        opacity: 0;
     }
     
     .reuniao__butao {
         width: 450px;
+        opacity: 1;
     }
 
     .reuniao__whats {
@@ -215,7 +226,8 @@
 
 @media only screen and (max-width: 510px) {
     .main {
-        height: 350px;
+        height: 400px;
+        padding-bottom: -50px;
     }
 
     .reuniao__foto {
@@ -231,6 +243,13 @@
         background-size: 24px;
         background-position: 93% 48%;
         height: 80px;
+    }
+    .reuniao__resumo {
+        width: 330px;
+        font-size: 15px;
+        line-height: 31px;
+        top: 250px;
+        left: 20px;
     }
 }
 
