@@ -279,8 +279,8 @@
 
 @media only screen and (max-width: 430px) {
     .main {
-        height: 270px;
-        margin-bottom: -50px;
+        height: 200px;
+        margin-top: 44px;
     }
 
     .reuniao__foto {
