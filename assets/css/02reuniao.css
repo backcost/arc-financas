@@ -280,6 +280,7 @@
 @media only screen and (max-width: 430px) {
     .main {
         height: 270px;
+        margin-bottom: -50px;
     }
 
     .reuniao__foto {
@@ -306,9 +307,9 @@
 
     .reuniao__resumo {
         font-size: 10.5px;
-        width: 290px;
+        width: 280px;
         left: 10px;
-        top: 290px;
+        top: 280px;
     }
 
     .reuniao__butao {
