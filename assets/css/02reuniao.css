@@ -34,7 +34,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     text-align: left;
-    width: 410px;
+    width: 450px;
     height: fit-content;
     color: var(--white);
     font-size: 19.5px;
@@ -50,9 +50,12 @@
 
 .resumo-titulo { 
     font-weight: 1400;
+    text-shadow: 100px 100px 200px black;
 }
 
 .resumo-texto { 
+    font-size: 17.5px;
+    text-shadow: 100px 100px 200px black;
     font-weight: 600;
 }
 
